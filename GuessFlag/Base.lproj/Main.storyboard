@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,6 +21,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3JT-RR-HAg">
                                 <rect key="frame" x="87.5" y="100" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3JT-RR-HAg" secondAttribute="height" multiplier="2:1" id="bUj-yD-XDA"/>
+                                </constraints>
                                 <state key="normal" image="estonia"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qoH-z6-Uwg"/>
@@ -27,6 +31,9 @@
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bka-he-jSs">
                                 <rect key="frame" x="87.5" y="230" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bka-he-jSs" secondAttribute="height" multiplier="2:1" id="F39-hg-NHp"/>
+                                </constraints>
                                 <state key="normal" image="estonia"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WMc-B8-VyA"/>
@@ -34,6 +41,9 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXx-YT-bBg">
                                 <rect key="frame" x="87.5" y="360" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KXx-YT-bBg" secondAttribute="height" multiplier="2:1" id="W7W-XF-Oe7"/>
+                                </constraints>
                                 <state key="normal" image="estonia"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V43-9U-vLf"/>
@@ -45,8 +55,11 @@
                             <constraint firstItem="KXx-YT-bBg" firstAttribute="top" secondItem="bka-he-jSs" secondAttribute="bottom" constant="30" id="7I1-di-kap"/>
                             <constraint firstItem="bka-he-jSs" firstAttribute="centerX" secondItem="3JT-RR-HAg" secondAttribute="centerX" id="9Lt-hq-0uA"/>
                             <constraint firstItem="bka-he-jSs" firstAttribute="top" secondItem="3JT-RR-HAg" secondAttribute="bottom" constant="30" id="AtR-2I-dx9"/>
+                            <constraint firstItem="KXx-YT-bBg" firstAttribute="height" secondItem="bka-he-jSs" secondAttribute="height" id="FmG-ec-nDq"/>
+                            <constraint firstItem="bka-he-jSs" firstAttribute="height" secondItem="3JT-RR-HAg" secondAttribute="height" id="KMD-g7-g7y"/>
                             <constraint firstItem="KXx-YT-bBg" firstAttribute="centerX" secondItem="bka-he-jSs" secondAttribute="centerX" id="PT1-FR-xte"/>
                             <constraint firstItem="3JT-RR-HAg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="Vec-Ng-bRc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="KXx-YT-bBg" secondAttribute="bottom" constant="20" id="dg0-A2-wE3"/>
                             <constraint firstItem="3JT-RR-HAg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="e3q-5Z-5TB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
